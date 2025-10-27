@@ -1,0 +1,25 @@
+Variable name   Description
+r               int; Row number
+fl              char; File name
+i               int; Utterance number
+j               int; Utterance number
+who_i           char; Who said it (TalkBank CHAT code)
+who_j           char; Who said it (TalkBank CHAT code)
+n_i             int; Number of tokens
+n_j             int; Number of tokens
+txt_i           char; Text of utterance
+txt_j           char; Text of utterance
+gra_i           char; Grammatical tier in TalkBank
+gra_j           char; Grammatical tier in TalkBank
+h_1             float; Entropy from EVM utterance i -> j
+h_2             float; Entropy from EVM utterance j -> i
+baseline        Baseline (NB: not used in this analysis)
+layer           int; BERT layer
+abs_dist        int; Absolute distance between utterances
+rel_dist        int; Relative distance between utterances
+self            bool; Whether the utterances are from the same person
+tb              bool; Whether the utterances are from TBI participants
+residH          float; Residuals from linear model of h_1 on h_2
+layerCat        Factor; Layer as factor
+distC           float; Centered distance
+par             bool; Whether the utterances are from the participant ("patient")
